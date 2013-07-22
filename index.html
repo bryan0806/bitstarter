@@ -8,14 +8,16 @@
   <link type="text/css" rel="stylesheet"
         href="https://d396qusza40orc.cloudfront.net/startup%2Fcode%2Fbootstrap-2.3.2.css">
   <style type="text/css">
-    body {
-      padding-top: 20px;
-      padding-bottom: 40px;
-    }
-    .container {
-      width:960px;
-    }
-    p.lead {
+
+   /* Large desktop */
+   @media (min-width: 980px){   
+   body {
+      padding-top: 60px;
+       }
+    
+      }
+
+       p.lead {
        padding-top:15px;
     }
    .navigation, .pitch, .section1, section2, .faq, .footer {
@@ -41,9 +43,30 @@
      </style>
     </head>
     <body>
-     <div class="container">
-       <div class="row navigation">
-        <div class="span2 logo">
+
+       <!-- Mobile-friendly navbar adapted from example. -->
+       <!-- http://twitter.github.io/bootstrap/examples/starter-template.html -->     
+      <div class="navbar navbar-invrse navbar-fixed-top">
+       <div class="navbar-inner">
+        <div class="container">
+               <button type="button" class="btn btn-navbar"
+                      data-toggle="collapse" data-target=".navcollapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+               </button>
+               <a class="brand" herf="#">Bitstarter</a>
+               <div class="nav-collapse collapse">
+                <ul class="nav">
+                  <li class="active"><a href="#">Home</a></li>
+                  <li><a href="#about">About</a></li>
+                  <li><a href="#contact">Contact</a></li>
+                 </ul>
+                </div><!--/.nav-collapse -->
+               </div>
+              </div>
+            </div>    
+    
          Logo
         </div>
         <div class="span6 blank">
